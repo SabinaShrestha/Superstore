@@ -36,7 +36,7 @@ class ItemsController < ApplicationController
 
   def destroy
     @item.destroy
-    redirect_to department_path
+    redirect_to department_path(@department)
   end
 
   private

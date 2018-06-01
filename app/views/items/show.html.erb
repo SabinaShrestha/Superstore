@@ -1,8 +1,6 @@
 <h1>Items Show</h1>
 
-<% @department.items.each do |item| %>
-  <%= item.name %>
-  <%= item.body %>
-  <%= link_to 'Edit', edit_department_item_path(@department, item) %>
-  <%= link_to 'Delete', department_item_path(@department, item), method: :delete %>
-<% end %>
+  <%= @item.name %>
+  <%= @item.body %>
+  <%= link_to 'Edit', edit_department_item_path(@department, @item) %>
+  <%= link_to 'Delete', [@department, @item], method: :delete %>

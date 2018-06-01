@@ -2,7 +2,11 @@
 
 <% @department.items.each do |item| %>
   <%= item.name %>
+  <br />
   <%= item.body %>
+  <br />
+  <%= link_to 'View', department_item_path(@department, item) %>
+  <hr />
 <% end %>
 
 <%= link_to 'Edit', edit_department_path(@department) %>
