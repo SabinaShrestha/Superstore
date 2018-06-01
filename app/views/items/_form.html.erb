@@ -1,0 +1,8 @@
+
+<%= form_for [@department, @item] do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+  <%= f.label :body %>
+  <%= f.text_field :body %>
+  <%= f.submit %>
+<% end %>
