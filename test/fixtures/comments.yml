@@ -2,10 +2,8 @@
 
 one:
   body: MyText
-  rating: 
-  item: one
+  rating: 1
 
 two:
   body: MyText
-  rating: 
-  item: two
+  rating: 1
